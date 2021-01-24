@@ -7,12 +7,36 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Home'), leading: Icon(Icons.menu)),
-        body: Center(
-          child: Text("Hello World", style: TextStyle(fontSize: 30)),
+          body: Center(
+        child: Row(
+          children: [
+            Container(
+                width: 42,
+                height: 42,
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(14.0),
+                  gradient: LinearGradient(
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+                      colors: [Colors.yellow, Colors.orange]),
+                ),
+                child: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                )),
+            SizedBox(
+              width: 12,
+            ),
+            Container(
+              child: Text(
+                'Home',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+              ),
+            ),
+          ],
         ),
-      ),
-      debugShowCheckedModeBanner: false,
+      )),
     );
   }
 }
