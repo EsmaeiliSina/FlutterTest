@@ -35,6 +35,8 @@ pubspec.lock
 /android/
 /ios/
 /test/
+/asset/*
+/asset/
 
 # Web related
 lib/generated_plugin_registrant.dart
