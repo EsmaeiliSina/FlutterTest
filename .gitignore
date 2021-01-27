@@ -37,6 +37,7 @@ pubspec.lock
 /test/
 /asset/*
 /asset/
+.gitignore
 
 # Web related
 lib/generated_plugin_registrant.dart
