@@ -1,6 +1,5 @@
 import 'package:app/constants.dart';
 import 'package:app/model/course.dart';
-import 'package:app/screens/sidebar_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'components/cards/recent_course_cards.dart';
