@@ -1,5 +1,7 @@
-import 'package:app/screens/sidebar_screen.dart';
+import 'package:app/model/course.dart';
 import 'package:flutter/material.dart';
+
+import 'components/cards/recent_course_cards.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +10,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: SidebarScreen()),
+      home: Scaffold(
+        body: SafeArea(
+          child: Container(
+            child: RecentCourseCard(
+              course: recentCourses[1],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
