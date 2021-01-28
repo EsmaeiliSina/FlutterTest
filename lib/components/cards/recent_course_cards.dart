@@ -13,7 +13,7 @@ class RecentCourseCard extends StatelessWidget {
       alignment: Alignment.topRight,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 25.0),
+          padding: EdgeInsets.only(top: 15.0),
           child: Container(
             height: 240,
             width: 240,
@@ -35,7 +35,7 @@ class RecentCourseCard extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: 32,
+                    top: 18,
                     right: 32,
                     left: 32,
                   ),
