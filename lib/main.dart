@@ -7,14 +7,35 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          backgroundColor: Colors.blueGrey[900],
-          title: Text("I Am Rich"),
-        ),
-        body: Center(
-          child: Image(
-            image: AssetImage('images/diamond.png'),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                color: Colors.red,
+                width: 100,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.yellow,
+                    height: 100,
+                    width: 100,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 100,
+                    width: 100,
+                  )
+                ],
+              ),
+              Container(
+                color: Colors.blue,
+                width: 100,
+              )
+            ],
           ),
         ),
       ),
