@@ -7,14 +7,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
           title: Text("I Am Rich"),
         ),
         body: Center(
           child: Image(
-            image: NetworkImage(
-                "https://www.itl.cat/pngfile/big/12-122105_diamond-background-wallpapers-diamond-with-black-background.jpg"),
+            image: AssetImage('images/diamond.png'),
           ),
         ),
       ),
