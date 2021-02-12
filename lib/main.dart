@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 60,
+                radius: 80,
                 backgroundImage: AssetImage('images/profile.jpg'),
               ),
               Text(
@@ -35,6 +33,13 @@ class MyApp extends StatelessWidget {
                     fontSize: 15,
                     fontStyle: FontStyle.italic,
                     letterSpacing: 2),
+              ),
+              SizedBox(
+                width: 180,
+                height: 20,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
               Card(
                 margin: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
